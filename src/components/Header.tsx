@@ -78,7 +78,7 @@ export default function Header() {
               onClick={(e) => handleLinkClick(e, "#footer-cta")}
               className="cursor-pointer font-mono text-xs text-brand-gold hover:text-white border border-brand-gold/30 hover:border-brand-gold px-4 py-2 rounded-sm uppercase tracking-widest bg-brand-gold/5 hover:bg-brand-gold/15 transition-all duration-300"
             >
-              Consultation
+              Book a Call
             </button>
           </div>
 
@@ -120,7 +120,7 @@ export default function Header() {
               onClick={(e) => handleLinkClick(e, "#footer-cta")}
               className="w-full cursor-pointer font-mono text-xs text-center text-black bg-brand-gold py-3 rounded-sm uppercase tracking-widest font-bold"
             >
-              Schedule Consultation
+              Book a Call
             </button>
           </motion.div>
         )}
