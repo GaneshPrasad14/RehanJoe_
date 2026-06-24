@@ -124,7 +124,7 @@ export default function Footer() {
                       onClick={() => setBookingStep("form")}
                       className="cursor-pointer inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-brand-gold to-[#ffdf91] text-black font-semibold text-xs sm:text-sm tracking-widest px-8 py-4.5 rounded-sm uppercase font-mono shadow-md border-glow-gold hover:scale-[1.01] transition-transform duration-300"
                     >
-                      Schedule a Strategic Consultation
+                      Book a Call
                       <ChevronRight className="w-4 h-4" />
                     </button>
                   </motion.div>
@@ -268,7 +268,7 @@ export default function Footer() {
                       type="submit"
                       className="w-full cursor-pointer bg-white text-black py-3.5 rounded font-bold uppercase text-xs tracking-wider hover:bg-brand-gold transition-colors duration-300 font-mono mt-2"
                     >
-                      Confirm Briefing Schedule
+                      Confirm Booking
                     </button>
                   </motion.form>
                 )}
