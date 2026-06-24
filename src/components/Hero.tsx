@@ -83,7 +83,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen pt-28 pb-20 flex flex-col justify-center items-center overflow-hidden bg-brand-dark px-4 sm:px-6 lg:px-8 z-10">
+    <section className="relative min-h-screen pt-32 pb-16 flex flex-col justify-center items-center overflow-hidden bg-brand-dark px-4 sm:px-6 lg:px-8 z-10">
       
       {/* Decorative cyber grids and glows */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f1f2e_1px,transparent_1px),linear-gradient(to_bottom,#1f1f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,#000_70%,transparent_100%)] opacity-20 pointer-events-none" />
@@ -120,7 +120,7 @@ export default function Hero() {
             <h2 className="font-mono text-zinc-500 text-xs sm:text-sm tracking-[0.3em] uppercase">
               PERSPECTIVES FROM
             </h2>
-            <h1 className="font-display font-black text-5xl sm:text-7xl lg:text-8xl tracking-tighter text-white mt-1 leading-[0.85] uppercase">
+            <h1 className="font-display font-black text-4xl sm:text-6xl lg:text-7xl tracking-tighter text-white mt-1 leading-[0.85] uppercase">
               REHAN JOE
             </h1>
             <p className="font-mono text-brand-gold text-xs sm:text-sm mt-3 tracking-widest uppercase">
@@ -135,7 +135,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-8 mb-6"
           >
-            <h2 className="font-display font-extrabold text-2xl sm:text-4xl text-zinc-100 leading-tight tracking-tight">
+            <h2 className="font-display font-extrabold text-xl sm:text-3xl text-zinc-100 leading-tight tracking-tight">
               Revenue Problems Are <span className="text-gold-gradient underline decoration-brand-gold/30 underline-offset-8">Rarely</span> Revenue Problems.
             </h2>
           </motion.div>
@@ -226,7 +226,7 @@ export default function Hero() {
               className="group relative cursor-pointer inline-flex items-center justify-center gap-3 bg-gradient-to-r from-zinc-100 to-white hover:from-brand-gold hover:to-[#ffdf91] text-black font-semibold text-xs sm:text-sm tracking-widest px-8 py-4.5 rounded-sm uppercase overflow-hidden transition-colors duration-500"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Book a Strategic Growth Consultation
+                Book a Call
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300" />
               </span>
               
@@ -248,13 +248,13 @@ export default function Hero() {
             onMouseMove={handleCardMouseMove}
             onMouseLeave={handleCardMouseLeave}
             style={{ rotateX: cardSmoothX, rotateY: cardSmoothY, transformStyle: "preserve-3d" }}
-            className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-[4/5] rounded-xl overflow-hidden glass-card p-4 transition-all duration-200 group"
+            className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-[4/4.5] rounded-[2.5rem] overflow-hidden glass-card p-3 transition-all duration-200 group"
           >
             {/* Ambient image glow frame */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-brand-gold to-brand-blue opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-500 rounded-2xl pointer-events-none" />
+            <div className="absolute -inset-1 bg-gradient-to-r from-brand-gold to-brand-blue opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-500 rounded-[3rem] pointer-events-none" />
             
             {/* The main picture container */}
-            <div className="relative w-full h-full rounded-lg overflow-hidden bg-zinc-950/90 border border-white/10 flex flex-col justify-end">
+            <div className="relative w-full h-full rounded-[2rem] overflow-hidden bg-zinc-950/90 border border-white/10 flex flex-col justify-end">
               
               {/* Stylized placeholder/real image combo */}
               <div className="absolute inset-0 z-0">
@@ -262,7 +262,7 @@ export default function Hero() {
                   src={headshotUrl}
                   alt="Rehan Joe - Revenue Growth Advisor" 
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover object-center scale-100 group-hover:scale-105 transition-transform duration-700 select-none grayscale contrast-125"
+                  className="w-full h-full object-cover object-center scale-100 group-hover:scale-105 transition-transform duration-700 select-none"
                 />
                 
                 {/* Visual glass overlay elements */}
