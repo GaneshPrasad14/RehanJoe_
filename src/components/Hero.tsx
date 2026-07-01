@@ -83,7 +83,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen pt-32 pb-16 flex flex-col justify-center items-center overflow-hidden bg-brand-dark px-4 sm:px-6 lg:px-8 z-10">
+    <section className="relative min-h-screen pt-28 lg:pt-56 pb-24 lg:pb-32 flex flex-col justify-center items-center overflow-hidden bg-brand-dark px-4 sm:px-6 lg:px-8 z-10">
       
       {/* Decorative cyber grids and glows */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f1f2e_1px,transparent_1px),linear-gradient(to_bottom,#1f1f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,#000_70%,transparent_100%)] opacity-20 pointer-events-none" />
@@ -92,7 +92,7 @@ export default function Hero() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-brand-gold/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-10 w-[300px] h-[300px] bg-brand-blue/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
         
         {/* LEFT COLUMN: BRANDING AND MAIN COPY */}
         <div className="lg:col-span-7 flex flex-col justify-center">
@@ -102,7 +102,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-2 mb-6 self-start px-3 py-1 bg-white/5 border border-white/10 rounded-full"
+            className="flex items-center gap-2 mb-8 lg:mb-12 self-start px-3 py-1 bg-white/5 border border-white/10 rounded-full"
           >
             <Sparkles className="w-3.5 h-3.5 text-brand-gold animate-pulse" />
             <span className="font-mono text-[10px] sm:text-xs tracking-widest text-zinc-300 uppercase">
@@ -115,7 +115,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mb-3"
+            className="mb-6 lg:mb-8"
           >
             <h2 className="font-mono text-zinc-500 text-xs sm:text-sm tracking-[0.3em] uppercase">
               PERSPECTIVES FROM
@@ -133,7 +133,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-8 mb-6"
+            className="mt-10 lg:mt-14 mb-8 lg:mb-10"
           >
             <h2 className="font-display font-extrabold text-xl sm:text-3xl text-zinc-100 leading-tight tracking-tight">
               Revenue Problems Are <span className="text-gold-gradient underline decoration-brand-gold/30 underline-offset-8">Rarely</span> Revenue Problems.
@@ -145,14 +145,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-zinc-400 text-sm sm:text-base leading-relaxed mb-8 max-w-xl"
+            className="text-zinc-400 text-sm sm:text-base leading-relaxed lg:leading-loose mb-10 max-w-xl"
           >
             <p className="mb-4">
               When growth slows, the root cause is usually hidden. It sits quietly within the structural frameworks of your company:
             </p>
 
             {/* Interactive bottleneck listing */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5 mt-6">
               {bottlenecks.map((item, index) => (
                 <div 
                   key={index}
@@ -199,7 +199,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="border-t border-white/5 pt-6 mb-8 max-w-xl"
+            className="border-t border-white/5 pt-8 lg:pt-10 mb-10 lg:mb-12 max-w-xl"
           >
             <p className="text-sm sm:text-base text-zinc-300 leading-relaxed font-sans font-light">
               The result is the same: <span className="text-zinc-100 font-medium">Revenue becomes unpredictable</span>. I help technology companies build scalable revenue engines that create predictable growth, stronger market positions, and sustainable competitive advantage.
