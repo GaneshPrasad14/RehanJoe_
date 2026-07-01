@@ -12,13 +12,13 @@ export default function WhyMe() {
   ];
 
   return (
-    <section id="why-me" className="py-24 bg-[#0a0a0c] relative overflow-hidden z-10 px-4 sm:px-6 lg:px-8 border-t border-white/5">
+    <section id="why-me" className="py-32 lg:py-48 bg-[#0a0a0c] relative z-10 px-4 sm:px-6 lg:px-8 border-y border-white/5">
       {/* Dynamic background light flares */}
       <div className="absolute right-[-10%] top-[20%] w-[450px] h-[450px] bg-brand-gold/5 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute left-[-10%] bottom-[10%] w-[450px] h-[450px] bg-brand-blue/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="w-full max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
           
           {/* LEFT COLUMN: THE CORE MANIFESTO STATEMENT */}
           <div className="lg:col-span-7">
@@ -41,7 +41,7 @@ export default function WhyMe() {
               </p>
             </blockquote>
 
-            <p className="text-zinc-400 text-sm sm:text-base mt-8 leading-relaxed font-sans font-light max-w-xl">
+            <p className="text-zinc-400 text-sm sm:text-base mt-8 leading-relaxed lg:leading-loose mb-10 font-sans font-light max-w-xl">
               The goal is not simply to increase sales. The goal is to build a business capable of generating predictable, scale-invariant revenue at speed. I construct the engines that sustain competitive superiority.
             </p>
           </div>
