@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
+import Brands from "./components/Brands";
 import Challenges from "./components/Challenges";
 import Services from "./components/Services";
 import WhyMe from "./components/WhyMe";
@@ -25,6 +26,9 @@ export default function App() {
       <main>
         {/* HERO BRIGHT INTRO */}
         <Hero />
+
+        {/* BRANDS I HAVE WORKED WITH */}
+        <Brands />
 
         {/* INFINITE TICKER MARQUEE */}
         <Marquee />
