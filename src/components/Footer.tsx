@@ -14,10 +14,10 @@ export default function Footer() {
     consultationType: "GTM Diagnostic (15 mins)",
     customType: "",
     selectedDate: "2026-06-25",
-    selectedTime: "10:00 AM EST"
+    selectedTime: "10:00 AM IST"
   });
 
-  const timeSlots = ["09:00 AM EST", "10:00 AM EST", "02:00 PM EST", "04:30 PM EST"];
+  const timeSlots = ["09:00 AM IST", "10:00 AM IST", "02:00 PM IST", "04:30 PM IST"];
   const dates = [
     { day: "Thu", num: "25", full: "2026-06-25" },
     { day: "Fri", num: "26", full: "2026-06-26" },
@@ -56,7 +56,7 @@ export default function Footer() {
   };
 
   return (
-    <footer id="footer-cta" className="relative bg-black pt-24 pb-12 overflow-hidden z-10 px-4 sm:px-6 lg:px-8 border-t border-white/5">
+    <footer id="footer-cta" className="relative bg-black pt-40 lg:pt-48 pb-20 lg:pb-24 overflow-hidden z-10 px-4 sm:px-6 lg:px-8 border-t border-white/5">
       {/* Visual neon light spots */}
       <div className="absolute top-[-10%] left-[20%] w-[500px] h-[500px] bg-brand-gold/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[10%] w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none" />
@@ -64,7 +64,7 @@ export default function Footer() {
       <div className="w-full max-w-7xl mx-auto">
         
         {/* TOP PANEL: FINAL DIRECT APPEAL AND SCHEDULER */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start pb-20 border-b border-white/5">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start pb-24 lg:pb-32 border-b border-white/5">
           
           {/* LEFT COLUMN: THE GTM TEXT APPEAL */}
           <div className="lg:col-span-6">
@@ -77,10 +77,10 @@ export default function Footer() {
             </h2>
             <div className="h-0.5 w-16 bg-brand-gold mt-6 mb-8" />
             
-            <p className="text-zinc-300 text-sm sm:text-base leading-relaxed font-sans font-light mb-6 max-w-xl">
+            <p className="text-zinc-300 text-sm sm:text-base leading-relaxed lg:leading-loose font-sans font-light mb-8 max-w-xl">
               If revenue growth has become less predictable than it should be, the issue is rarely effort. It is usually the system behind the growth.
             </p>
-            <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-sans font-light mb-8 max-w-xl">
+            <p className="text-zinc-400 text-sm sm:text-base leading-relaxed lg:leading-loose font-sans font-light mb-12 max-w-xl">
               Let's identify what's holding your growth back and build the repeatable revenue engine required to scale your customer capture.
             </p>
 
@@ -138,7 +138,7 @@ export default function Footer() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    className="space-y-4"
+                    className="space-y-6 lg:space-y-8"
                   >
                     <div className="flex items-center justify-between border-b border-white/5 pb-3">
                       <span className="font-mono text-[10px] text-zinc-500 uppercase tracking-widest">DIAGNOSTIC SCHEDULER</span>
@@ -152,7 +152,7 @@ export default function Footer() {
                     </div>
 
                     {/* Inputs */}
-                    <div className="space-y-3">
+                    <div className="space-y-4 lg:space-y-5">
                       <div className="relative">
                         <User className="absolute left-3.5 top-3.5 w-4 h-4 text-zinc-500" />
                         <input 
