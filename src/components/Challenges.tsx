@@ -11,7 +11,7 @@ export default function Challenges() {
   };
 
   return (
-    <section id="challenges" className="py-24 bg-[#0a0a0c] relative z-10 px-4 sm:px-6 lg:px-8">
+    <section id="challenges" className="py-32 lg:py-48 bg-[#0a0a0c] relative z-10 px-4 sm:px-6 lg:px-8">
       {/* Background gradients */}
       <div className="absolute right-10 top-1/4 w-[350px] h-[350px] bg-brand-gold/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute left-10 bottom-1/4 w-[350px] h-[350px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none" />
@@ -19,7 +19,7 @@ export default function Challenges() {
       <div className="w-full max-w-4xl mx-auto">
         
         {/* Section Header */}
-        <div className="mb-16 text-center max-w-3xl mx-auto">
+        <div className="mb-20 lg:mb-28 text-center max-w-3xl mx-auto">
           <span className="font-mono text-xs text-brand-gold tracking-[0.25em] uppercase">
             01 / Diagnostics
           </span>
@@ -33,7 +33,7 @@ export default function Challenges() {
         </div>
 
         {/* Accordion List */}
-        <div className="space-y-4">
+        <div className="space-y-6 lg:space-y-8">
           {CHALLENGES.map((item, index) => {
             const isOpen = openId === item.id;
             const isGoldTheme = index % 2 === 0;
@@ -45,7 +45,7 @@ export default function Challenges() {
               >
                 <button
                   onClick={() => toggleAccordion(item.id)}
-                  className="w-full flex items-center justify-between p-5 sm:p-6 text-left cursor-pointer"
+                  className="w-full flex items-center justify-between p-6 sm:p-8 lg:p-10 text-left cursor-pointer"
                 >
                   <div className="flex items-center gap-4">
                     <span className={`font-mono text-xs font-bold ${
@@ -74,7 +74,7 @@ export default function Challenges() {
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                       className="overflow-hidden"
                     >
-                      <div className="p-5 sm:p-6 pt-0 border-t border-white/5 mt-2">
+                      <div className="p-6 sm:p-8 lg:p-10 pt-0 border-t border-white/5 mt-4">
                         <div className="flex items-start gap-3 mt-4">
                           <AlertCircle className={`w-5 h-5 shrink-0 mt-0.5 ${
                             isGoldTheme ? 'text-brand-gold' : 'text-brand-blue'
@@ -84,7 +84,7 @@ export default function Challenges() {
                           </p>
                         </div>
                         
-                        <div className="flex items-start gap-3 mt-6 bg-black/40 p-4 rounded-lg border border-white/5">
+                        <div className="flex items-start gap-4 mt-8 bg-black/40 p-5 sm:p-6 rounded-xl border border-white/5">
                           <CheckCircle className="w-5 h-5 shrink-0 mt-0.5 text-emerald-400 opacity-85" />
                           <div>
                             <span className="font-mono text-[10px] text-emerald-400 tracking-wider uppercase block mb-1 font-bold">
