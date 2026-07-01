@@ -10,12 +10,12 @@ export default function Services() {
   const graphicUrl = "/growth_visualization.png";
 
   return (
-    <section id="services" className="py-24 bg-brand-dark border-t border-white/5 relative z-10 px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-32 lg:py-48 bg-brand-dark border-t border-white/5 relative z-10 px-4 sm:px-6 lg:px-8">
       {/* Visual glowing grid dots in bg */}
       <div className="absolute inset-0 bg-[radial-gradient(#ffffff03_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
 
       <div className="w-full max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
           
           {/* LEFT SIDE: PHILOSOPHY & ILLUSTRATION */}
           <div className="lg:col-span-5 lg:sticky lg:top-28">
