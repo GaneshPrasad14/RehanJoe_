@@ -21,18 +21,18 @@ export default function Engagement() {
   };
 
   return (
-    <section id="engagement" className="py-24 bg-brand-dark border-t border-white/5 relative z-10 px-4 sm:px-6 lg:px-8">
+    <section id="engagement" className="py-32 lg:py-48 bg-brand-dark relative z-10 px-4 sm:px-6 lg:px-8">
       {/* Decorative vertical divider line behind elements for visual anchor */}
       <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[1px] bg-white/3 pointer-events-none hidden lg:block" />
 
       <div className="w-full max-w-7xl mx-auto relative z-20">
         
         {/* Header Block */}
-        <div className="mb-16 text-center max-w-3xl mx-auto">
+        <div className="mb-20 lg:mb-28 text-center max-w-2xl mx-auto">
           <span className="font-mono text-xs text-brand-blue tracking-[0.25em] uppercase">
             04 / Collaboration
           </span>
-          <h2 className="font-display font-black text-3xl sm:text-5xl mt-3 text-white tracking-tight uppercase">
+          <h2 className="font-display font-black text-2xl sm:text-4xl lg:text-5xl mt-3 text-white tracking-tight uppercase break-words">
             Engagement Options
           </h2>
           <div className="h-0.5 w-16 bg-brand-blue mx-auto mt-4" />
@@ -42,7 +42,7 @@ export default function Engagement() {
         </div>
 
         {/* 4-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative z-10">
           {ENGAGEMENTS.map((item, index) => {
             const isGold = index % 2 === 0;
 
